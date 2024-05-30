@@ -2,7 +2,7 @@ from api import routes
 from api.api_client import ApiClient
 
 
-def get_users(client: ApiClient, gender: str):
+def get_users(client: ApiClient, gender: str = None):
     return client.get(routes.Routes.USERS, params={'gender': gender} if gender else None)
 
 

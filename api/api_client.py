@@ -22,5 +22,5 @@ class ApiClient(Client):
         """
 
         if eval(os.getenv("USE_LOGS")):
-            logger.info(f'{method} {url}')
+            logger.info(f'{method} {url} | queryParams: {kwargs['params']}')
         return super().request(method, url, **kwargs)

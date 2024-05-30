@@ -1,33 +1,26 @@
 from pydantic import BaseModel
-from enum import StrEnum
-from typing import List
-from pydantic.types import AwareDatetime
-
-
-class Genders(StrEnum):
-    MALE = 'male'
-    FEMALE = 'female'
+from typing import List, Optional
 
 
 class BaseResponse(BaseModel):
     isSuccess: bool
     errorCode: int
-    errorMessage: str | None
+    errorMessage: Optional[str] = None
 
 
 class UserData(BaseModel):
     id: int
     name: str
-    gender: Genders
+    gender: str
     age: int
     city: str
-    registrationDate: AwareDatetime
+    registrationDate: str
 
 
 class UserResponse(BaseResponse):
-    user: UserData | None
+    user: Optional[UserData] = None
 
 
 class UsersResponse(BaseResponse):
-    idList: List[int]
+    idList: Optional[List[int]] = []
 
