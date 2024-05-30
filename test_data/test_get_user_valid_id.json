@@ -1,0 +1,13 @@
+{
+  "isSuccess": true,
+  "errorCode": 0,
+  "errorMessage": null,
+  "user": {
+    "id": 5,
+    "name": "Ann",
+    "gender": "female",
+    "age": 22,
+    "city": "Novosibirsk",
+    "registrationDate": "2017-04-12T18:30:01.000000021"
+  }
+}
