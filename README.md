@@ -1,4 +1,6 @@
 ## eng
+### Description
+This example provides a basic structure for organizing an API automation testing project. The goal is to promote a well-structured and maintainable approach to test development and execution.
 ### To run the tests:
 1. Clone the repository.
 2. Create and activate a virtual environment (venv):
@@ -22,6 +24,8 @@
 
 
 ## rus
+### Описание
+Этот пример демонстрирует базовую структуру организации проекта по автоматизированному тестированию API. Цель заключается в том, чтобы предложить хорошо организованный и поддерживаемый подход к разработке и выполнению тестов.
 ### Для запуска тестов необходимо:
 1. Клонировать репозиторий
 2. Создать и запустить venv:
